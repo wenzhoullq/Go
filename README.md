@@ -17,6 +17,12 @@
 # 计算机网络
 [小林coding的计算机网络部分比较好,别的内容次一级但是也能看](https://www.xiaolincoding.com/)
 
+# 数据库
+
+[时序数据库,了解下即可](https://www.cnblogs.com/tianqing/p/7152940.html)
+
+[时序数据库常用于互联网级的监控,tps特别高](https://www.cnblogs.com/badboy200800/p/10981052.html)
+
 # 系统设计
 
 [设计一个高并发短链系统](https://www.cnblogs.com/xxuuzz/p/16426250.html)
