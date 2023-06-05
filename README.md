@@ -9,6 +9,7 @@
 [slice](https://mp.weixin.qq.com/s/uNajVcWr4mZpof1eNemfmQ)
 
 ## socket编程
+[socket编程基础知识](https://www.cnblogs.com/twoheads/p/10712094.html)
 [net包](https://mp.weixin.qq.com/s/xt0Elppc_OaDFnTI_tW3hg)
 [http包]()
 # 计算机网络
