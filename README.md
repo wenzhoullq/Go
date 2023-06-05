@@ -12,4 +12,8 @@
 [net包](https://mp.weixin.qq.com/s/xt0Elppc_OaDFnTI_tW3hg)
 [http包]()
 # 计算机网络
-[小林coding的计算机网络部分,别的内容次一级但是也能看](https://www.xiaolincoding.com/)
+[小林coding的计算机网络部分比较好,别的内容次一级但是也能看](https://www.xiaolincoding.com/)
+
+# 系统设计
+
+[设计一个高并发短链系统](https://www.cnblogs.com/xxuuzz/p/16426250.html)
