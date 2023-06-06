@@ -1,3 +1,6 @@
+# 前言
+
+博客园的文章质量相对于CSDN较高,可以通过博客园进行名词搜索;可以考虑掘金社区的文章,CSDN的文章抄袭居多,质量良莠不齐
 
 # GO
 ## 公众号
@@ -25,14 +28,26 @@
 
 [时序数据库常用于互联网级的监控,tps特别高](https://www.cnblogs.com/badboy200800/p/10981052.html)
 
-# 系统设计
+# 系统设计题
 
 ## 短链系统
 
 [设计一个高并发短链系统,比较侧重于QPS分析,采用离线密钥的方式来应对高并发](https://www.cnblogs.com/xxuuzz/p/16426250.html)
 
+[采用本地生成的分布式ID,如雪花算法来应对高并发发号;重点掌握发号,储存,映射这三块问题](https://blog.csdn.net/crazymakercircle/article/details/128820168?ops_request_misc=&request_id=8ffd6256137e42bfaf3da9f4b5912cb0&biz_id=&utm_medium=distribute.pc_search_result.none-task-blog-2~blog~koosearch~default-1-128820168-null-null.268^v1^control&utm_term=%E7%9F%AD%E9%93%BE&spm=1018.2226.3001.4450)
+
 # 三高架构设计
 
 ## 高可用
+
+高可用架构从如下四点回答：
+  
+  1.同城双活+多机房
+  
+  2.缓存降级服务
+  
+  3.副本数据延迟优化架构
+  
+  4.降级服务策略
 
 [redis同城双活,比较偏向于实战](https://blog.csdn.net/u012171444/article/details/127525169)
