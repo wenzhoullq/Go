@@ -26,3 +26,7 @@
 # 系统设计
 
 [设计一个高并发短链系统](https://www.cnblogs.com/xxuuzz/p/16426250.html)
+
+# 三高设计
+
+[redis同城双活,比较偏向于实战](https://blog.csdn.net/u012171444/article/details/127525169)
