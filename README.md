@@ -19,13 +19,17 @@
 
 # 数据库
 
+## 时序数据库
+
 [时序数据库,了解下即可](https://www.cnblogs.com/tianqing/p/7152940.html)
 
 [时序数据库常用于互联网级的监控,tps特别高](https://www.cnblogs.com/badboy200800/p/10981052.html)
 
 # 系统设计
 
-[设计一个高并发短链系统](https://www.cnblogs.com/xxuuzz/p/16426250.html)
+## 短链系统
+
+[设计一个高并发短链系统,比较侧重于QPS分析,采用离线密钥的方式来应对高并发](https://www.cnblogs.com/xxuuzz/p/16426250.html)
 
 # 三高设计
 
