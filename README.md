@@ -31,6 +31,8 @@
 
 [设计一个高并发短链系统,比较侧重于QPS分析,采用离线密钥的方式来应对高并发](https://www.cnblogs.com/xxuuzz/p/16426250.html)
 
-# 三高设计
+# 三高架构设计
+
+## 高可用
 
 [redis同城双活,比较偏向于实战](https://blog.csdn.net/u012171444/article/details/127525169)
