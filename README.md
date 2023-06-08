@@ -5,7 +5,7 @@
 ## 公众号
 刘丹冰 小徐先生的编程世界 go语言中文网 微服务实践 架构师尼恩(八股内容一般般,关于三高架构的文章质量高)
 ## Runtime
-[只用看垃圾回收,内存管理,内存分配部分,其他部分太简略了](https://www.yuque.com/aceld/golang)
+[只用看垃圾回收,内存管理,内存分配部分,其他部分太简略了没必要看](https://www.yuque.com/aceld/golang)
 
 ## map,chan,slice
 [slice](https://mp.weixin.qq.com/s/uNajVcWr4mZpof1eNemfmQ)
@@ -27,7 +27,7 @@
 
 [hyperloglog,一种数据结构,可能存在误差率,但是内存消耗更低](https://www.cnblogs.com/yangmingxianshen/p/8180369.html)
 
-[有赞日活UV统计的方式](https://blog.csdn.net/crazymakercircle/article/details/130648646?spm=1001.2014.3001.5501)
+[有赞日活UV统计的方式,使用了bitmap和hyperloglog](https://blog.csdn.net/crazymakercircle/article/details/130648646?spm=1001.2014.3001.5501)
 
 
 ## 时序数据库
@@ -39,6 +39,12 @@
 # 数据一致性
 
 [redis和mysql的数据一致性,主要是后几种生产者消费模式,消息队列和订阅binlog的方式](https://blog.csdn.net/crazymakercircle/article/details/129295341?spm=1001.2014.3001.5501)
+
+# 消息队列
+
+[解决消息积压的问题,并且阐述消息积压产生原因,但是这种采集应该使用时序数据库,解决方案并不完美](https://www.bilibili.com/video/BV1SS4y137ta/?spm_id_from=333.999.0.0)
+
+# 分布式
 
 [基于消息服务的最终一致性,常用于订单等服务](https://www.bilibili.com/video/BV1TZ4y1B745?buvid=YE4559E184927B0E4BD6B8A33F52A67E195B&is_story_h5=false&mid=%2BNz3o2orolOxzz8cJezV0A%3D%3D&p=1&plat_id=114&share_from=ugc&share_medium=iphone&share_plat=ios&share_session_id=9AF25BB2-4021-4070-90C9-BBE1C3E35802&share_source=WEIXIN&share_tag=s_i&timestamp=1684240430&unique_k=nZutly7&up_id=386555201)
 
