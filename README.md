@@ -29,11 +29,18 @@
 
 [有赞日活UV统计的方式](https://blog.csdn.net/crazymakercircle/article/details/130648646?spm=1001.2014.3001.5501)
 
+
 ## 时序数据库
 
 [时序数据库,了解下即可](https://www.cnblogs.com/tianqing/p/7152940.html)
 
 [时序数据库常用于互联网级的监控,tps特别高](https://www.cnblogs.com/badboy200800/p/10981052.html)
+
+# 数据一致性
+
+[redis和mysql的数据一致性,主要是后几种生产者消费模式,消息队列和订阅binlog的方式](https://blog.csdn.net/crazymakercircle/article/details/129295341?spm=1001.2014.3001.5501)
+
+[基于消息服务的最终一致性,常用于订单等服务](https://www.bilibili.com/video/BV1TZ4y1B745?buvid=YE4559E184927B0E4BD6B8A33F52A67E195B&is_story_h5=false&mid=%2BNz3o2orolOxzz8cJezV0A%3D%3D&p=1&plat_id=114&share_from=ugc&share_medium=iphone&share_plat=ios&share_session_id=9AF25BB2-4021-4070-90C9-BBE1C3E35802&share_source=WEIXIN&share_tag=s_i&timestamp=1684240430&unique_k=nZutly7&up_id=386555201)
 
 # 系统设计题
 
