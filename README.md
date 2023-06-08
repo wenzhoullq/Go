@@ -21,6 +21,14 @@
 
 # 数据库
 
+## redis
+
+[bitmap原理,精准的低内存统计,了解下原理](https://www.cnblogs.com/cjsblog/p/11613708.html)
+
+[hyperloglog,一种数据结构,可能存在误差率,但是内存消耗更低](https://www.cnblogs.com/yangmingxianshen/p/8180369.html)
+
+[有赞日活UV统计的方式](https://blog.csdn.net/crazymakercircle/article/details/130648646?spm=1001.2014.3001.5501)
+
 ## 时序数据库
 
 [时序数据库,了解下即可](https://www.cnblogs.com/tianqing/p/7152940.html)
