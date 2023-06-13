@@ -57,6 +57,8 @@
 
 [rocketMQ的文章,挺齐全的,没事看看查漏补缺](https://www.cnblogs.com/weifeng1463/p/12889300.html)
 
+[rocketMq官方文档,不适合八股学习,适合实战的时候看看](https://rocketmq.apache.org/zh/docs/)
+
 
 # 分布式
 
