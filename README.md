@@ -13,18 +13,33 @@
 ## map,chan,slice
 [slice](https://mp.weixin.qq.com/s/uNajVcWr4mZpof1eNemfmQ)
 
+[map](https://mp.weixin.qq.com/s?__biz=MzkxMjQzMjA0OQ==&mid=2247483868&idx=1&sn=6e954af8e5e98ec0a9d9fc5c8ceb9072&chksm=c10c4f02f67bc614ff40a152a848508aa1631008eb5a600006c7552915d187179c08d4adf8d7&scene=178&cur_album_id=2709593649634033668#rd)
+
+[chan](https://mp.weixin.qq.com/s/QgNndPgN1kqxWh-ijSofkw)
+
 ## socket编程
+
 [socket编程基础知识](https://www.cnblogs.com/twoheads/p/10712094.html)
 
 [net包](https://mp.weixin.qq.com/s/xt0Elppc_OaDFnTI_tW3hg)
 
-[http包]()
+[http包](https://mp.weixin.qq.com/s?__biz=MzkxMjQzMjA0OQ==&mid=2247484040&idx=1&sn=b710f4429188ea5f49f6a9155381b67f&chksm=c10c4c56f67bc540971550d92b4d9339fce806c9daf94e971fd71a1cca823f2bbcea863b3cc8&scene=178&cur_album_id=2709593649634033668#rd)
+
+[gin框架](https://mp.weixin.qq.com/s/x8i9HvAzIHNbHCryLw5icg)
 # 计算机网络
-[小林coding的计算机网络部分比较好,别的内容次一级但是也能看](https://www.xiaolincoding.com/)
+[小林coding的计算机网络部分比较好,不太需要别的书了,别的内容质量次一级但是也能看](https://www.xiaolincoding.com/)
 
 # 数据库
 
+## mysql
+
+## mongo
+
+## es
+
 ## redis
+
+基础知识比如AOF和RDB,内存淘汰策略,主从问题等等看《redis设计与实现》这本书
 
 ### 大Key
 
@@ -76,6 +91,8 @@
 
 [基于消息服务的最终一致性,常用于订单等服务](https://www.bilibili.com/video/BV1TZ4y1B745?buvid=YE4559E184927B0E4BD6B8A33F52A67E195B&is_story_h5=false&mid=%2BNz3o2orolOxzz8cJezV0A%3D%3D&p=1&plat_id=114&share_from=ugc&share_medium=iphone&share_plat=ios&share_session_id=9AF25BB2-4021-4070-90C9-BBE1C3E35802&share_source=WEIXIN&share_tag=s_i&timestamp=1684240430&unique_k=nZutly7&up_id=386555201)
 
+[raft和etcd]()
+
 # 系统设计题
 
 [B站的高并发点赞,无论是熟悉架构设计还是配合项目食用都挺好的](https://blog.csdn.net/crazymakercircle/article/details/129281202?spm=1001.2014.3001.5501)
@@ -120,4 +137,6 @@
   
   ### 降级服务,限流,熔断
 
+# 云原生
 
+[docker和k8s看阿里云公开课](https://edu.aliyun.com/course/314164/lesson/7781)
