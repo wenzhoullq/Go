@@ -26,6 +26,18 @@
 
 ## redis
 
+### 大Key
+
+[大Key发现](https://www.cnblogs.com/yqzc/p/12425533.html)
+
+[大Key拆分](https://www.cnblogs.com/-wenli/p/13612364.html)
+
+### 热Key
+
+热key问题基本上是**本地缓存**+**热点发现**
+
+### 其他
+
 [bitmap原理,精准的低内存统计,了解下原理](https://www.cnblogs.com/cjsblog/p/11613708.html)
 
 [hyperloglog,一种数据结构,可能存在误差率,但是内存消耗更低](https://www.cnblogs.com/yangmingxianshen/p/8180369.html)
