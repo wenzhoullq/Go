@@ -10,6 +10,8 @@
 ## Runtime
 [只用看垃圾回收,内存管理,内存分配部分,其他部分太简略了没必要看](https://www.yuque.com/aceld/golang)
 
+[触发gc的时机](https://mp.weixin.qq.com/s/e2-NXWCS0bd2BPWzdeiS_A)
+
 ## map,chan,slice
 [slice](https://mp.weixin.qq.com/s/uNajVcWr4mZpof1eNemfmQ)
 
