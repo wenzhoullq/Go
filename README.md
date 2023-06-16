@@ -5,7 +5,9 @@
 ## 公众号
 刘丹冰 小徐先生的编程世界 go语言中文网 微服务实践 架构师尼恩(八股内容一般般,关于三高架构的文章质量高)
 
-[比较偏底层,不适合0基础直接看,等有一定基础后再看](https://www.bilibili.com/video/BV1hv411x7we?p=1&vd_source=1063dec5ba093fbbf0591f3c9003cee8)
+[B站视频,比较偏底层,不适合0基础直接看,等有一定基础后再看](https://www.bilibili.com/video/BV1hv411x7we?p=1&vd_source=1063dec5ba093fbbf0591f3c9003cee8)
+
+[Go 语言设计与实现，偏底层,不适合0基础看](https://draveness.me/golang/docs/part2-foundation/ch05-keyword/golang-panic-recover/)
 
 ## Runtime
 [只用看垃圾回收,内存管理,内存分配部分,其他部分太简略了没必要看](https://www.yuque.com/aceld/golang)
