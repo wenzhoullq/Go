@@ -31,6 +31,8 @@
 # 计算机网络
 [小林coding的计算机网络部分比较好,不太需要别的书了,别的内容质量次一级但是也能看](https://www.xiaolincoding.com/)
 
+[断点上传,http1.1以上,在header-range里确定上传范围,返回码是206](https://www.cnblogs.com/OIMM/p/9144798.html)
+
 # 数据库
 
 ## mysql
