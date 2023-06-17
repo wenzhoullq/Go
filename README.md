@@ -52,6 +52,8 @@
 
 ## mysql
 
+[小林coding,主要没找到更好的,别的书不适合八股学习,可以看尚硅谷的mysql补充一些没有的知识点](https://www.xiaolincoding.com/mysql/)
+
 ## mongo
 
 ## es
