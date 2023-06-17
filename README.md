@@ -3,12 +3,25 @@
 博客园的文章质量相对于CSDN较高,可以通过博客园进行名词搜索;也可以考虑掘金社区的文章,CSDN的文章抄袭居多,因为量太大了,感觉质量差的文章很多,但是也有好的文章
 # GO
 ## 公众号
-刘丹冰 小徐先生的编程世界 go语言中文网 微服务实践 架构师尼恩(八股内容一般般,关于三高架构的文章质量高)
+刘丹冰 小徐先生的编程世界 go语言中文网 微服务实践 架构师尼恩(八股内容一般般,关于三高架构的文章质量高),[go梦工厂](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkyNzI1NzM5NQ==&action=getalbum&album_id=1932319304830517254&scene=173&from_msgid=2247484781&from_itemidx=1&count=3&nolastread=1#wechat_redirect)
+
+## 无分类
 
 [B站视频,比较偏底层,不适合0基础直接看,等有一定基础后再看](https://www.bilibili.com/video/BV1hv411x7we?p=1&vd_source=1063dec5ba093fbbf0591f3c9003cee8)
 
 [Go 语言设计与实现，偏底层,不适合0基础看](https://draveness.me/golang/docs/part2-foundation/ch05-keyword/golang-panic-recover/)
 
+[for range的坑](https://mp.weixin.qq.com/s?__biz=MzkyNzI1NzM5NQ==&mid=2247484755&idx=1&sn=5e3f8405dc8244875614cc936fbfd601&source=41#wechat_redirect)
+
+[sync.once的底层,互斥锁+aotomic包实现,主要是后者的三道面试题](https://mp.weixin.qq.com/s?__biz=MzkyNzI1NzM5NQ==&mid=2247484782&idx=1&sn=472e7ecef81a11f83abda18172ec53f5&chksm=c22b8332f55c0a2488a7e2e1dcd9d2bf3afb764b29e0733d6307e6f6d5d4fde8b550a4cc4e18&scene=178&cur_album_id=1932319304830517254#rd)
+
+## unsafe
+
+[unsafe包主要是unsafe.Pointer是一种万能指针,它能将安全的指针转化Pointer直接进行内存管理,也可以转为安全类型且别的类型的指针,同时可以转为uintptr进行偏移量的计算,最经典的应用是StringBuilder实现零拷贝](https://blog.csdn.net/Mazi1994/article/details/124864996)
+
+[unsafe包的应用,零拷贝实现[]byte和string的转换](https://mp.weixin.qq.com/s?__biz=MzkyNzI1NzM5NQ==&mid=2247484941&idx=1&sn=326abc6706a092e36af32a5b682e6e3c&chksm=c22b8051f55c0947df20327d7993878f1086c5391ec5890ae78e17df2c7627bd4bf345010f9b&scene=178&cur_album_id=1932319304830517254#rd)
+
+[atomic包的cas,乐观锁(无锁),通过unsafe包实现,同时go的cas是没有aba问题的](https://mp.weixin.qq.com/s?__biz=MzkyNzI1NzM5NQ==&mid=2247484781&idx=1&sn=dcd593f3fe1fa8fe75a18dbd53802dc8&source=41#wechat_redirect)
 ## Runtime
 [只用看垃圾回收,内存管理,内存分配部分,其他部分太简略了没必要看](https://www.yuque.com/aceld/golang)
 
