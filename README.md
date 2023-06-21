@@ -9,13 +9,17 @@
 
 [B站视频,涉及到汇编和指针,不适合0基础直接看,等有一定基础后再看](https://www.bilibili.com/video/BV1hv411x7we?p=1&vd_source=1063dec5ba093fbbf0591f3c9003cee8)
 
-[Go 语言设计与实现，涉及到汇编,但是go的版本有点老了](https://draveness.me/golang/docs/part2-foundation/ch05-keyword/golang-panic-recover/)
+[Go语言设计与实现，涉及到汇编,不适合0基础](https://draveness.me/golang/docs/part2-foundation/ch05-keyword/golang-panic-recover/)
 
 [for range的坑](https://mp.weixin.qq.com/s?__biz=MzkyNzI1NzM5NQ==&mid=2247484755&idx=1&sn=5e3f8405dc8244875614cc936fbfd601&source=41#wechat_redirect)
 
 [sync.once的底层,互斥锁+aotomic包实现,主要是后者的三道面试题](https://mp.weixin.qq.com/s?__biz=MzkyNzI1NzM5NQ==&mid=2247484782&idx=1&sn=472e7ecef81a11f83abda18172ec53f5&chksm=c22b8332f55c0a2488a7e2e1dcd9d2bf3afb764b29e0733d6307e6f6d5d4fde8b550a4cc4e18&scene=178&cur_album_id=1932319304830517254#rd)
 
-[《go学习笔记》,比较偏底层,初学者不建议看,看过基本八股后可以看看]()
+[《go学习笔记》,涉及到汇编,go版本有点老,无在线地址,存在网盘里]()
+
+[go的伪汇编的知识点等等介绍,感觉挺有意思的,可以看看](https://chai2010.cn/advanced-go-programming-book/index.html)
+
+[工具书,感觉内容有点老,可能会用到吧](https://github.com/astaxie/build-web-application-with-golang/blob/master/zh/preface.md)
 
 ## unsafe
 
