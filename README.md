@@ -7,9 +7,9 @@
 
 ## 无分类
 
-[B站视频,比较偏底层,不适合0基础直接看,等有一定基础后再看](https://www.bilibili.com/video/BV1hv411x7we?p=1&vd_source=1063dec5ba093fbbf0591f3c9003cee8)
+[B站视频,涉及到汇编和指针,不适合0基础直接看,等有一定基础后再看](https://www.bilibili.com/video/BV1hv411x7we?p=1&vd_source=1063dec5ba093fbbf0591f3c9003cee8)
 
-[Go 语言设计与实现，偏底层,不适合0基础看](https://draveness.me/golang/docs/part2-foundation/ch05-keyword/golang-panic-recover/)
+[Go 语言设计与实现，涉及到汇编,但是go的版本有点老了](https://draveness.me/golang/docs/part2-foundation/ch05-keyword/golang-panic-recover/)
 
 [for range的坑](https://mp.weixin.qq.com/s?__biz=MzkyNzI1NzM5NQ==&mid=2247484755&idx=1&sn=5e3f8405dc8244875614cc936fbfd601&source=41#wechat_redirect)
 
@@ -26,6 +26,8 @@
 [atomic包的cas,乐观锁(无锁),通过unsafe包实现,同时go的cas是没有aba问题的](https://mp.weixin.qq.com/s?__biz=MzkyNzI1NzM5NQ==&mid=2247484781&idx=1&sn=dcd593f3fe1fa8fe75a18dbd53802dc8&source=41#wechat_redirect)
 ## Runtime
 [只用看垃圾回收,内存管理,内存分配部分,其他部分太简略了没必要看,初级八股,面小厂够用了,面大厂可能会叼你说只知道八股](https://www.yuque.com/aceld/golang)
+
+[GMP,主要是协程的7个状态以及它的小结,讲GMP先介绍它们的数据结构,比如g的结构体和Gfree,p的含义以及和最大并发数,m的含义和MList以及全局队列,gmp三个结构体的映射关系,然后讲调度,从两个角度来讲,调度策略和调度时机,比如从全局队列拿,handoff,stealing,gc,对于network等等;然后讲调度时机,如主动让出goshced，被动等待dropg时g的状态变化等等](https://zhuanlan.zhihu.com/p/502740833?utm_id=0)
 
 [触发gc的时机](https://mp.weixin.qq.com/s/e2-NXWCS0bd2BPWzdeiS_A)
 
