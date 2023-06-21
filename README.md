@@ -21,6 +21,10 @@
 
 [工具书,感觉内容有点老,可能会用到吧](https://github.com/astaxie/build-web-application-with-golang/blob/master/zh/preface.md)
 
+[go编译器 go compiler,重点看看内存逃逸,闭包重写和函数内联的定义](https://www.cnblogs.com/shix0909/p/15691079.html)
+
+[go栈扩容](https://www.cnblogs.com/davygeek/p/9871256.html)
+
 ## unsafe
 
 [unsafe包主要是unsafe.Pointer是一种万能指针,它能将安全的指针转化Pointer直接进行内存管理,也可以转为安全类型且别的类型的指针,同时可以转为uintptr进行偏移量的计算,最经典的应用是StringBuilder实现零拷贝](https://blog.csdn.net/Mazi1994/article/details/124864996)
