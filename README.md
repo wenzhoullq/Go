@@ -44,11 +44,11 @@
 [协程和线程主要从内存空间,上下文切换以及创建和销毁]()
 
 ## map,chan,slice
-[slice](https://mp.weixin.qq.com/s/uNajVcWr4mZpof1eNemfmQ)
+[slice考点比较少,讲一讲底层复用,讲一讲深拷贝和浅拷贝,讲一讲扩容机制](https://mp.weixin.qq.com/s/uNajVcWr4mZpof1eNemfmQ)
 
 [map,主要的回答点在扩容机制,range无序和为何无序以及如何无序,key如何定位到一个value,就是整个hash映射方式(高8lowB)+结构体的记忆](https://mp.weixin.qq.com/s?__biz=MzkxMjQzMjA0OQ==&mid=2247483868&idx=1&sn=6e954af8e5e98ec0a9d9fc5c8ceb9072&chksm=c10c4f02f67bc614ff40a152a848508aa1631008eb5a600006c7552915d187179c08d4adf8d7&scene=178&cur_album_id=2709593649634033668#rd)
 
-[chan](https://mp.weixin.qq.com/s/QgNndPgN1kqxWh-ijSofkw)
+[chan主要讲它实现了go的csp,然后讲一讲csp的优点解耦,缺点是容易写出死锁,再讲一讲它的结构体,讲一讲它通过结构体里的互斥锁实现同步,讲一讲带缓冲的之间的区别,讲一讲阻塞请求/接受队列,讲一讲不同状态下进行请求,发送和关闭](https://mp.weixin.qq.com/s/QgNndPgN1kqxWh-ijSofkw)
 
 ## socket编程
 
