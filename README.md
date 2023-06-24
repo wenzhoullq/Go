@@ -55,7 +55,15 @@
 [http包](https://mp.weixin.qq.com/s?__biz=MzkxMjQzMjA0OQ==&mid=2247484040&idx=1&sn=b710f4429188ea5f49f6a9155381b67f&chksm=c10c4c56f67bc540971550d92b4d9339fce806c9daf94e971fd71a1cca823f2bbcea863b3cc8&scene=178&cur_album_id=2709593649634033668#rd)
 
 [gin框架](https://mp.weixin.qq.com/s/x8i9HvAzIHNbHCryLw5icg)
+
+# Linux
+
+[epoll的缺陷主要在多核消费fd,tl可能有惊群效应,所有的线程(因为多CPU所以一个cpu一个线程)都被唤醒有惊群效应,el可能有不必要的唤醒问题,因此用标志位+tl](https://www.zhihu.com/question/26101751)
+
+[查看最近访问的ip的次数,通过ngnix日志进行统计](https://blog.csdn.net/xu710263124/article/details/119875291)
+
 # 计算机网络
+
 [小林coding的计算机网络部分比较好,不太需要别的书了,别的内容质量次一级但是也能看](https://www.xiaolincoding.com/)
 
 [断点上传,http1.1以上,在header-range里确定上传范围,返回码是206](https://www.cnblogs.com/OIMM/p/9144798.html)
