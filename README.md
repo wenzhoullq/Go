@@ -10,7 +10,7 @@
 
 [入门视频,用户入门和查漏补缺](https://www.bilibili.com/video/BV1EB4y1D7WW/?spm_id_from=333.788&vd_source=1063dec5ba093fbbf0591f3c9003cee8)
 
-[Go语言底层原理剖析,go版本还可以,有汇编和别的知识点,值得一看](https://www.cnblogs.com/shix0909/p/15691079.html)
+[Go语言底层原理剖析，必看且多看几遍,全且深,类似于Java里的Java核心卷1+深入理解JVM](https://www.cnblogs.com/shix0909/p/15691079.html)
 
 [B站视频,涉及到汇编和指针,不适合0基础直接看,等有一定基础后再看](https://www.bilibili.com/video/BV1hv411x7we?p=1&vd_source=1063dec5ba093fbbf0591f3c9003cee8)
 
@@ -20,9 +20,9 @@
 
 [sync.once的底层,互斥锁+aotomic包实现,主要是后者的三道面试题](https://mp.weixin.qq.com/s?__biz=MzkyNzI1NzM5NQ==&mid=2247484782&idx=1&sn=472e7ecef81a11f83abda18172ec53f5&chksm=c22b8332f55c0a2488a7e2e1dcd9d2bf3afb764b29e0733d6307e6f6d5d4fde8b550a4cc4e18&scene=178&cur_album_id=1932319304830517254#rd)
 
-[go的伪汇编的知识点等等介绍,感觉挺有意思的,可以看看](https://chai2010.cn/advanced-go-programming-book/index.html)
+[go的伪汇编,cgo知识点等等介绍,感觉挺有意思的,可以看看](https://chai2010.cn/advanced-go-programming-book/index.html)
 
-[《go学习笔记》,涉及到汇编,go版本有点老,很多知识点比较旧,无在线地址,存在网盘里]()
+[《go学习笔记》,涉及到汇编,go版本有点老,很多知识点比较旧,无在线地址,存在网盘里,不是特别推荐看]()
 
 [工具书,感觉内容有点老,可能会用到吧](https://github.com/astaxie/build-web-application-with-golang/blob/master/zh/preface.md)
 
@@ -38,7 +38,7 @@
 ## Runtime
 [只用看垃圾回收,内存管理,内存分配部分,其他部分太简略了没必要看,初级八股,面小厂够用了,面大厂可能会叼你说只知道八股](https://www.yuque.com/aceld/golang)
 
-[GMP,主要是协程的7个状态以及它的小结,讲GMP先介绍它们的数据结构,比如g的结构体和Gfree,p的含义以及和最大并发数,m的含义和MList以及全局队列,gmp三个结构体的映射关系,然后讲调度,从两个角度来讲,调度策略和调度时机,比如从本地队列拿全局队列拿,handoff,stealing等等;然后讲调度时机,比如gc,network阻塞的时候,主动让出goshced，被动等待dropg时g的状态变化等等](https://zhuanlan.zhihu.com/p/502740833?utm_id=0)
+[GMP,主要是协程的7个状态以及它的小结,讲GMP先介绍它们的数据结构,比如g的结构体和Gfree,p是调度器以及最大并发数和plist,m是内核线程,gmp三个结构体的映射关系,然后讲调度,从三个角度来讲,调度循环,调度策略和调度时机,调度循环是先讲g0是什么,再说g0->g->g的过程中间调用了schedule（调度策略）,exec(GP之间的绑定和解绑),gogo(操作系统里寄存器的指令),然后讲schedule是调度策略,p先看runext,如果没有则去看runq,如果还没有再去看全局队列,如果再没有再去看网络通信里,还没有则去stealing,stealing不到则自旋,自选后还没有就handoff;对于全局队列,为了防止饥饿,g执行一定次数后会去全局队列里调度;然后讲调度时机,和exec有关,分为主动调度,被动调度和抢占调度,主动调度是自己执行runtime.schedul,将runq和nextq放到全局队列里;被动调度指的是gc,M阻塞等等调用gopark,注意并不会把g放入全局队列,而是调用exec进行解绑;最后是抢占式调度,1.14版本之后解决gc的时候没有抢占的问题](https://zhuanlan.zhihu.com/p/502740833?utm_id=0)
 
 [触发gc的时机](https://mp.weixin.qq.com/s/e2-NXWCS0bd2BPWzdeiS_A)
 
