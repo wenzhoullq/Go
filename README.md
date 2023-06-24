@@ -39,6 +39,8 @@
 
 [触发gc的时机](https://mp.weixin.qq.com/s/e2-NXWCS0bd2BPWzdeiS_A)
 
+[协程和线程主要从内存空间,上下文切换以及创建和销毁]()
+
 ## map,chan,slice
 [slice](https://mp.weixin.qq.com/s/uNajVcWr4mZpof1eNemfmQ)
 
