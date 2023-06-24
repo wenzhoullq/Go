@@ -35,7 +35,7 @@
 ## Runtime
 [只用看垃圾回收,内存管理,内存分配部分,其他部分太简略了没必要看,初级八股,面小厂够用了,面大厂可能会叼你说只知道八股](https://www.yuque.com/aceld/golang)
 
-[GMP,主要是协程的7个状态以及它的小结,讲GMP先介绍它们的数据结构,比如g的结构体和Gfree,p的含义以及和最大并发数,m的含义和MList以及全局队列,gmp三个结构体的映射关系,然后讲调度,从两个角度来讲,调度策略和调度时机,比如从全局队列拿,handoff,stealing,gc,对于network等等;然后讲调度时机,如主动让出goshced，被动等待dropg时g的状态变化等等](https://zhuanlan.zhihu.com/p/502740833?utm_id=0)
+[GMP,主要是协程的7个状态以及它的小结,讲GMP先介绍它们的数据结构,比如g的结构体和Gfree,p的含义以及和最大并发数,m的含义和MList以及全局队列,gmp三个结构体的映射关系,然后讲调度,从两个角度来讲,调度策略和调度时机,比如从本地队列拿全局队列拿,handoff,stealing等等;然后讲调度时机,比如gc,network阻塞的时候,主动让出goshced，被动等待dropg时g的状态变化等等](https://zhuanlan.zhihu.com/p/502740833?utm_id=0)
 
 [触发gc的时机](https://mp.weixin.qq.com/s/e2-NXWCS0bd2BPWzdeiS_A)
 
