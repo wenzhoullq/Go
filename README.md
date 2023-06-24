@@ -10,7 +10,7 @@
 
 [入门视频,用户入门和查漏补缺](https://www.bilibili.com/video/BV1EB4y1D7WW/?spm_id_from=333.788&vd_source=1063dec5ba093fbbf0591f3c9003cee8)
 
-[Go语言底层原理剖析，必看且多看几遍,全且深,类似于Java里的Java核心卷1+深入理解JVM](https://www.cnblogs.com/shix0909/p/15691079.html)
+[Go语言底层原理剖析，必看且多看几遍,全且深,类似于Java里的Java核心卷1+深入理解JVM]()
 
 [B站视频,涉及到汇编和指针,不适合0基础直接看,等有一定基础后再看](https://www.bilibili.com/video/BV1hv411x7we?p=1&vd_source=1063dec5ba093fbbf0591f3c9003cee8)
 
