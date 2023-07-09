@@ -22,10 +22,6 @@
 
 [go的伪汇编,cgo知识点等等介绍,感觉挺有意思的,可以看看](https://chai2010.cn/advanced-go-programming-book/index.html)
 
-[《go学习笔记》,涉及到汇编,go版本有点老,很多知识点比较旧,无在线地址,存在网盘里,不是特别推荐看]()
-
-[工具书,感觉内容有点老,可能会用到吧](https://github.com/astaxie/build-web-application-with-golang/blob/master/zh/preface.md)
-
 [go栈扩容](https://www.cnblogs.com/davygeek/p/9871256.html)
 
 ## unsafe
@@ -139,7 +135,7 @@
 
 [基于消息服务的最终一致性,常用于订单等服务](https://www.bilibili.com/video/BV1TZ4y1B745?buvid=YE4559E184927B0E4BD6B8A33F52A67E195B&is_story_h5=false&mid=%2BNz3o2orolOxzz8cJezV0A%3D%3D&p=1&plat_id=114&share_from=ugc&share_medium=iphone&share_plat=ios&share_session_id=9AF25BB2-4021-4070-90C9-BBE1C3E35802&share_source=WEIXIN&share_tag=s_i&timestamp=1684240430&unique_k=nZutly7&up_id=386555201)
 
-[raft和etcd]()
+[分布式协议与算法实战这本书很好,值得反复观看,资源在阿里云盘]()
 
 # 系统设计题
 
@@ -184,10 +180,6 @@
   ### 副本数据延迟优化架构
   
   ### 降级服务,限流,熔断
-
-# 分布式
-
-[分布式协议与算法实战这本书很好,值得反复观看,资源在阿里云盘]()
 
 # 云原生
 
