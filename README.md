@@ -6,6 +6,7 @@
 ## 公众号
 刘丹冰 小徐先生的编程世界 go语言中文网 微服务实践 架构师尼恩(八股内容一般般,关于三高架构的文章质量比较高),[go梦工厂](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkyNzI1NzM5NQ==&action=getalbum&album_id=1932319304830517254&scene=173&from_msgid=2247484781&from_itemidx=1&count=3&nolastread=1#wechat_redirect)
 
+[陈皓网站，质量挺高的](https://coolshell.cn/articles/21128.html)
 ## 无分类
 
 [入门视频,用户入门和查漏补缺](https://www.bilibili.com/video/BV1EB4y1D7WW/?spm_id_from=333.788&vd_source=1063dec5ba093fbbf0591f3c9003cee8)
