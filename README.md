@@ -42,7 +42,103 @@
 [协程和线程主要从内存空间,上下文切换以及创建和销毁]()
 
 ## map,chan,slice
-[slice考点比较少,讲一讲底层复用,讲一讲深拷贝和浅拷贝,讲一讲扩容机制](https://mp.weixin.qq.com/s/uNajVcWr4mZpof1eNemfmQ)
+
+### slice
+
+切片的考点主要在于:切片的结构体,切片的扩容机制,切片底层共用数组,切片的值传递与函数
+
+而go中的数组,如果声明了长度则是数组,如 s:=[3]int{1,2,3},作为函数的参数的时候需要声明数组的长度
+
+```go
+package main
+
+import "fmt"
+
+func deal(s []int) {//会报错
+	//s = append(s, []int{1, 2}...)
+	s[0] = 2
+}
+
+func main() {
+	//s := make([]int, 10, 12)
+	s := [3]int{1, 2, 3}
+	deal(s)
+	fmt.Println(s)
+}
+
+```
+
+#### 切片的结构体
+
+切片的结构体共有三个对象:分别是len,cap和slicehead;len是实际容量,cap是理论容量,如果不超过这个范围则不发生扩容,slicehead是指针,指向物理地址
+
+#### 扩容机制
+
+在切片的大小小于256的时候,是通过翻倍扩容
+
+在切片的大小在256以上,通过容量的1/4不断进行扩容
+ 
+#### 共用数组
+
+对于s1 := s[2:] 之后,slicehead改变了,但是仍然共用数组
+
+``` go
+package main
+
+import "fmt"
+
+func main() {
+	s := make([]int, 10, 12)
+
+	//非共用数组
+	s1 := s[8:]
+	s1 = append(s1, []int{10, 11, 12}...)
+	s1[1] = 1
+	fmt.Println("非共用数组了")
+	fmt.Println(s, s1)
+
+	s2 := s[8:]
+	s2 = append(s2, []int{10, 11}...)
+	s2[1] = 1
+	fmt.Println("共用数组了")
+	fmt.Println(s, s2)
+}
+//执行结果
+
+非共用数组了
+[0 0 0 0 0 0 0 0 0 0] [0 1 10 11 12]
+共用数组了
+[0 0 0 0 0 0 0 0 0 1] [0 1 10 11]
+
+```
+
+##### 切片的值传递与函数
+
+由于slicehead是指针,因此在传递的时候虽然是值传递（复制）,但是由于传递了指针,对于函数内的修改会影响函数外,但是对于函数内的扩容成一个新的slicehead则不影响函数外
+
+``` go
+
+package main
+
+import "fmt"
+
+func deal(s []int) {
+	s[0] = 1
+}
+
+func main() {
+	s := make([]int, 10, 12)
+	deal(s)
+	fmt.Println(s)
+}
+//[1 0 0 0 0 0 0 0 0 0]
+
+```
+
+参考资料:
+[你真的了解go语言中的切片吗？](https://mp.weixin.qq.com/s/uNajVcWr4mZpof1eNemfmQ)
+
+
 
 [map,主要的回答点在扩容机制,range无序和为何无序以及如何无序,key如何定位到一个value,就是整个hash映射方式(高8lowB)+结构体的记忆](https://mp.weixin.qq.com/s?__biz=MzkxMjQzMjA0OQ==&mid=2247483868&idx=1&sn=6e954af8e5e98ec0a9d9fc5c8ceb9072&chksm=c10c4f02f67bc614ff40a152a848508aa1631008eb5a600006c7552915d187179c08d4adf8d7&scene=178&cur_album_id=2709593649634033668#rd)
 
