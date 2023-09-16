@@ -168,7 +168,35 @@ map的无序主要为了防止开发者在遍历的时候依赖于key的顺序,�
 
 [Golang map 实现原理](https://mp.weixin.qq.com/s?__biz=MzkxMjQzMjA0OQ==&mid=2247483868&idx=1&sn=6e954af8e5e98ec0a9d9fc5c8ceb9072&chksm=c10c4f02f67bc614ff40a152a848508aa1631008eb5a600006c7552915d187179c08d4adf8d7&scene=178&cur_album_id=2709593649634033668#rd)
 
-[chan主要讲它实现了go的csp,然后讲一讲csp的优点解耦,缺点是容易写出死锁,再讲一讲它的结构体,讲一讲它通过结构体里的互斥锁实现同步,讲一讲带缓冲的之间的区别,讲一讲阻塞请求/接受队列,讲一讲不同状态下进行请求,发送和关闭](https://mp.weixin.qq.com/s/QgNndPgN1kqxWh-ijSofkw)
+
+
+### chan
+
+考点:1.csp 2.chan的数据结构 3.chan的不同状态的读和写
+
+#### csp
+
+在go中通过通信实现并发控制,即通过chan进行并发控制,这样容易解耦,但是通过chan编程容易写出死锁
+
+#### 数据结构
+
+chan的主要数据结构在于：
+
+1.互斥锁,chan通过互斥锁实现并发
+
+2.sendreq 发送队列,如果发送队列为空则阻塞
+
+3.recvreq 接受队列,如果接受队列为空则阻塞
+
+#### 不同状态的读写
+
+思考逻辑在于,接收端是不会主动关闭队列的,因为它不知道chan还会不会被写入,所以在关闭状态下从chan获得值获得的时候都是默认值
+
+对于发送端来说,因为你主动关闭的chan,因此你对一个关闭的队列写入会Panic
+
+对于close来说,没有初始化过的chan和已经关闭的chan再次关闭会报错
+
+[Golang Channel 实现原理](https://mp.weixin.qq.com/s/QgNndPgN1kqxWh-ijSofkw)
 
 ## socket编程
 
