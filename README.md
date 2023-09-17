@@ -306,7 +306,18 @@ sendfile配合SG-DMA 可以不用将缓存区拷贝至socket缓冲区,直接将�
 
 [mysql 最大建议行数 2000w, 靠谱吗？](https://my.oschina.net/u/4090830/blog/5559454)
 
-[小林coding,主要没找到更好的,别的书不适合八股学习,可以看尚硅谷的mysql补充一些没有的知识点](https://www.xiaolincoding.com/mysql/)
+
+### count(1) count(*) count(主键) count(非主键) 以及null
+
+1.count(1) = count(*) > count(主键) >>> count(非主键)
+
+2.只有聚簇索引走聚簇索引,有二级索引走二级索引(因为二级索引的一条数据较少)
+
+3. 非主键且无索引走全表因此速度是最慢的
+
+4. 对于非主键可能存在null值,其余的不统计null,因此非主键的数量可能小于主键
+
+参考资料: [count(*) 和 count(1) 有什么区别？哪个性能最好？](https://www.xiaolincoding.com/mysql/index/count.html#%E5%93%AA%E7%A7%8D-count-%E6%80%A7%E8%83%BD%E6%9C%80%E5%A5%BD)
 
 ## mongo
 
