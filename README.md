@@ -286,6 +286,17 @@ sendfile配合SG-DMA 可以不用将缓存区拷贝至socket缓冲区,直接将�
 
 ## mysql
 
+### mysql主从结构
+
+主要考点:三个线程,两个日志
+
+三个线程分别是主服务器的binlog dump,以及从服务器的IO线程和它的sql线程,两个日志是指binlog日志(也叫做二进制日志)和中继日志
+
+流程如下:首先从服务器的IO线程对主服务器发起请求,主服务器通过binlog dump线程将自己的二进制日志发送给从服务器,从服务器将binlogdump中的内容写入中继日志,sql线程最后从中继日志中读取内容,最后执行该sql
+
+参考资料:[6.3. 复制实施细节](https://www.mysqlzh.com/doc/54.html)
+
+
 [小林coding,主要没找到更好的,别的书不适合八股学习,可以看尚硅谷的mysql补充一些没有的知识点](https://www.xiaolincoding.com/mysql/)
 
 ## mongo
