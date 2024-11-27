@@ -325,26 +325,9 @@ sendfile配合SG-DMA 可以不用将缓存区拷贝至socket缓冲区,直接将�
 单条SQL执行过长导致主从同步延迟。通过慢SQL日志找到该条日志，可以联系DBA手动杀死这个session。
 mysql>show processlist;
 musql>kill n;
-其中n为执行的show processlist后的ID
+其中n为执行的show processlist后的ID(SHOW PROCESSLIST 是 MySQL 中的一个命令，用于显示当前正在运行的线程列表。这个命令可以帮助你监控活动连接、诊断性能问题以及管理数据库活动)
 
-SHOW PROCESSLIST 是 MySQL 中的一个命令，用于显示当前正在运行的线程列表。这个命令可以帮助你监控活动连接、诊断性能问题以及管理数据库活动。下面是 SHOW PROCESSLIST 输出的一个典型示例，并附带列的解释：
-+-----+------+-----------+------+---------+------+-------+------------------+
-| Id  | User | Host      | db   | Command | Time | State | Info             |
-+-----+------+-----------+------+---------+------+-------+------------------+
-| 1   | root | localhost | test | Sleep   | 10   |       | NULL             |
-| 2   | root | localhost | test | Query   | 0    | NULL  | SELECT * FROM ...|
-| 3   | user | 192.168.1.2:12345 | NULL | Connect | 5   | reading from net | NULL |
-+-----+------+-----------+------+---------+------+-------+------------------+
-Id: 连接标识符。
-User: 执行命令的 MySQL 用户。
-Host: 用户连接的主机，包括端口号。
-db: 线程的默认数据库，如果没有选择数据库则为 NULL。
-Command: 线程正在执行的命令类型（例如，Query、Sleep、Connect）。
-Time: 线程处于当前状态的时间（以秒为单位）。
-State: 线程的当前动作或状态（例如，Sending data、Locked、Sorting result）。
-Info: 线程正在执行的实际查询或命令，如果适用。
-
-暂时结束之后，RD需要考虑为啥这个mysql执行时间过长，如大量的批量插入（一次性插入千万级条数据）或则不合理的SQL语句（未添加合适的索引或则不好的SQL语句导致未使用索引）。
+结束该sql之后，RD需要考虑为啥这个mysql执行时间过长，如大量的批量插入（一次性插入千万级条数据）或则不合理的SQL语句（未添加合适的索引或则不好的SQL语句导致未使用索引）。
 
 3.从库IO性能下降
 
